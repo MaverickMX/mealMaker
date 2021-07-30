@@ -29,13 +29,13 @@ Intermediate JavaScript knowledge
 6. Inside the courses getter method, return an object that contains key/value pairs for appetizers, mains, and desserts.
 7. Inside the menu object, we are going to create a method called .addDishToCourse() which will be used to add a new dish to the specified course on the menu.
 
-The method should take in three parameters: the courseName, the dishName , and the dishPrice.
+    The method should take in three parameters: the courseName, the dishName , and the dishPrice.
 8. The .addDishToCourse() method should create an object called dish which has a name and price which it gets from the parameters.
 
-The method should then push this dish object into the appropriate array in your menu‘s _courses object based on what courseName was passed in.
+    The method should then push this dish object into the appropriate array in your menu‘s _courses object based on what courseName was passed in.
 9. Now, we’re going to need another function which will allow us to get a random dish from a course on the menu, which will be necessary for generating a random meal.
 
-Create a method inside the menu object called .getRandomDishFromCourse(). It will take in one parameter which is the courseName.
+    Create a method inside the menu object called .getRandomDishFromCourse(). It will take in one parameter which is the courseName.
 10. There are a few steps in getting the .getRandomDishFromCourse() to work.
     + Retrieve the array of the given course’s dishes from the menu‘s _courses object and store in a variable called dishes.
     + Generate a random index by multiplying Math.random() by the length of the dishes array (This will guarantee that the random number will be between 0 and the length of the array)
